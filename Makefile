@@ -8,4 +8,7 @@ build: check
 	poetry build
 
 test-coverage:
-	poetry run pytest poetry run pytest --cov
+	poetry run pytest --cov
+
+test:
+	poetry run pytest
