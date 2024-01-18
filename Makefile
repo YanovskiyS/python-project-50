@@ -8,7 +8,7 @@ build: check
 	poetry build
 
 test-coverage:
-	poetry run pytest --cov
+	poetry run pytest --cov=gendiff
 
 test:
 	poetry run pytest
