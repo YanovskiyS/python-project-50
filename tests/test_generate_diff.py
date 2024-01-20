@@ -1,8 +1,9 @@
 from gendiff.gendiff import generate_diff
+from gendiff.gendiff import generate_diff
 
 
 data_for_test = open('tests/fixtures/extended_value_for_example.txt', 'r')
-file_path1 = 'tests/fixtures/fiel1.json'
+file_path1 = 'tests/fixtures/file1.json'
 file_path2 = 'tests/fixtures/file2.json'
 
 
