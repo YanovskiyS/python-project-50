@@ -1,8 +1,1 @@
-{
-  - follow: False
-    host: hexlet.io
-  - proxy: 123.234.53.22
-  - timeout: 50
-  + timeout: 20
-  + verbose: True
-}
+{"follow": {"key": "follow", "operation": "deleted", "value": false}, "host": {"key": "host", "operation": "unchanged", "value": "hexlet.io"}, "proxy": {"key": "proxy", "operation": "deleted", "value": "123.234.53.22"}, "timeout": {"key": "timeout", "operation": "changed", "old": 50, "new": 20}, "verbose": {"key": "verbose", "operation": "added", "value": true}}

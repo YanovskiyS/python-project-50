@@ -1,12 +1,16 @@
-from gendiff.gendiff import generate_diff
-from gendiff.gendiff import generate_diff
+from gendiff.generate_diff import generate_diff
+from tests import FIXTURES_PATH
+import pytest
 
 
-data_for_test = open('tests/fixtures/extended_value_for_example.txt', 'r')
-file_path1 = 'tests/fixtures/file1.json'
-file_path2 = 'tests/fixtures/file2.json'
-
-
-def test_generate_diff():
-    with open('tests/fixtures/extended_value_for_example.txt', 'r') as result:
-        assert result.read() == generate_diff(file_path1, file_path2)
+@pytest.mark.parametrize("file1, file2, expected_path, format ", [
+    (
+        f"{FIXTURES_PATH}/nested_file1.json",
+        f"{FIXTURES_PATH}/nested_file2.json",
+        f"{FIXTURES_PATH}/expected_value_for_stylish.txt",
+        "stylish"
+    )
+])
+def test_generate_diff(file1, file2, expected_path, format):
+    with open(expected_path, 'r') as result:
+        assert result.read().strip() == generate_diff(file1, file2, format)

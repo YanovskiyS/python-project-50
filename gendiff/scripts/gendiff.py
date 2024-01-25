@@ -1,5 +1,5 @@
 import argparse
-from gendiff.gendiff import generate_diff
+from gendiff.generate_diff import generate_diff
 
 
 def main():
@@ -8,9 +8,13 @@ def main():
     )
     parser.add_argument('first_file')
     parser.add_argument('second_file')
-    parser.add_argument('-f', '--format', help='set format of output')
+    parser.add_argument('-f',
+                        '--format',
+                        default='stylish',
+                        choices=['stylish', 'plain', 'json'],
+                        help='set format of output')
     args = parser.parse_args()
-    print(generate_diff(args.first_file, args.second_file))
+    print(generate_diff(args.first_file, args.second_file, format=args.format))
 
 
 if __name__ == '__main__':

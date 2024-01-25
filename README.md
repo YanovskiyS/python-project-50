@@ -9,3 +9,6 @@
 
 Example of work package:
 [![asciicast](https://asciinema.org/a/TKnyUAheODn4VDuaeNcfNqZ6m.svg)](https://asciinema.org/a/TKnyUAheODn4VDuaeNcfNqZ6m)
+
+Example of work package with nested files
+[![asciicast](https://asciinema.org/a/0H91TxGX2sw9psFq8dhYvpwUB.svg)](https://asciinema.org/a/0H91TxGX2sw9psFq8dhYvpwUB)
