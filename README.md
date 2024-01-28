@@ -15,3 +15,6 @@ Example of work package with nested files
 
 Example of work package with plain format
 [![asciicast](https://asciinema.org/a/HV2nVIQGgo8b6DxJQjOeofcDL.svg)](https://asciinema.org/a/HV2nVIQGgo8b6DxJQjOeofcDL)
+
+Example of work package with json format
+[![asciicast](https://asciinema.org/a/xmYf1ajA03MgyeBlDmpX3ME0b.svg)](https://asciinema.org/a/xmYf1ajA03MgyeBlDmpX3ME0b)
