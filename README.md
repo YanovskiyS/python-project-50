@@ -12,3 +12,6 @@ Example of work package:
 
 Example of work package with nested files
 [![asciicast](https://asciinema.org/a/0H91TxGX2sw9psFq8dhYvpwUB.svg)](https://asciinema.org/a/0H91TxGX2sw9psFq8dhYvpwUB)
+
+Example of work package with plain format
+[![asciicast](https://asciinema.org/a/HV2nVIQGgo8b6DxJQjOeofcDL.svg)](https://asciinema.org/a/HV2nVIQGgo8b6DxJQjOeofcDL)

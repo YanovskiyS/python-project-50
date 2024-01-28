@@ -20,7 +20,7 @@ def value_to_str(value, depth):
 
 def build_line(data, key, depth, INDENT='  '):
     return f"{'  ' * depth}{INDENT}{data['key']}: " \
-           f"{value_to_str(data[key], depth + 1)}"
+           f"{value_to_str(data[key], depth+1)}"
 
 
 def walk(node, depth=0):
