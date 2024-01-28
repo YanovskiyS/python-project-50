@@ -21,7 +21,8 @@ def walk(node, path=''):
         if val['operation'] == 'deleted':
             result.append(f"{start_line} was delete.")
         if val['operation'] == 'added':
-            result.append(f"{start_line} was added with value: {to_str(val['value'])}")
+            result.append(f"{start_line} was added with value:"
+                          f"{to_str(val['value'])}")
     return '\n'.join(result)
 
 

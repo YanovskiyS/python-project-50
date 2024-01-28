@@ -23,7 +23,7 @@ def build_line(data, key, depth, INDENT='  '):
            f"{value_to_str(data[key], depth+1)}"
 
 
-def walk(node, depth=0):
+def walk(node, depth=0): # noqa: C901
     lines = []
     space = REPLACER * (depth + 1)
     for value in node.values():
