@@ -8,7 +8,7 @@ from tests import FIXTURES_PATH
     (
         f"{FIXTURES_PATH}/file1.json",
         f"{FIXTURES_PATH}/file2.json",
-        f"{FIXTURES_PATH}/extended_value_for_example.txt",
+        f"{FIXTURES_PATH}/expected_value_for_example.txt",
     ),
 ])
 def test_diff(file1, file2, expected_path):
