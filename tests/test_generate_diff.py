@@ -5,6 +5,20 @@ import pytest
 
 @pytest.mark.parametrize("file1, file2, expected_path, format", [
     (
+        f"{FIXTURES_PATH}/file1.json",
+        f"{FIXTURES_PATH}/file2.json",
+        f"{FIXTURES_PATH}/expected_value_for_flat_files.txt",
+        "stylish"
+    ),
+
+    (
+        f"{FIXTURES_PATH}/file1.yml",
+        f"{FIXTURES_PATH}/file2.yml",
+        f"{FIXTURES_PATH}/expected_value_for_flat_files.txt",
+        "stylish"
+    ),
+    
+    (
         f"{FIXTURES_PATH}/nested_file1.json",
         f"{FIXTURES_PATH}/nested_file2.json",
         f"{FIXTURES_PATH}/expected_value_for_stylish.txt",
