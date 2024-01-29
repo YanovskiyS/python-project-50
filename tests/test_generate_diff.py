@@ -17,7 +17,7 @@ import pytest
         f"{FIXTURES_PATH}/expected_value_for_flat_files.txt",
         "stylish"
     ),
-    
+
     (
         f"{FIXTURES_PATH}/nested_file1.json",
         f"{FIXTURES_PATH}/nested_file2.json",
