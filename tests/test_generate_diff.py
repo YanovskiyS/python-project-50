@@ -26,10 +26,10 @@ import pytest
     ),
 
     (
-       f"{FIXTURES_PATH}/nested_file1.yml",
+        f"{FIXTURES_PATH}/nested_file1.yml",
         f"{FIXTURES_PATH}/nested_file2.yml",
         f"{FIXTURES_PATH}/expected_value_for_plain.txt",
-        "plain"  
+        "plain"
     ),
 
 
@@ -41,10 +41,10 @@ import pytest
     ),
 
     (
-      f"{FIXTURES_PATH}/nested_file1.yml",
+        f"{FIXTURES_PATH}/nested_file1.yml",
         f"{FIXTURES_PATH}/nested_file2.yml",
         f"{FIXTURES_PATH}/expected_value_for_json.txt",
-        "json"  
+        "json"
     )
 
 
