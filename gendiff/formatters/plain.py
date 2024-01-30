@@ -19,7 +19,7 @@ def walk(node, path=''):
         if val['operation'] == 'nested':
             result.append(f"{walk(val['value'], current_path + '.' )}")
         if val['operation'] == 'deleted':
-            result.append(f"{start_line} was delete.")
+            result.append(f"{start_line} was removed.")
         if val['operation'] == 'added':
             result.append(f"{start_line} was added with value: "
                           f"{to_str(val['value'])}")
