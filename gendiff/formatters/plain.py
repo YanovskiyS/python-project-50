@@ -12,7 +12,7 @@ def walk(node, path=''):
     result = []
     for key, val in node.items():
         current_path = f"{path}{val['key']}"
-        start_line = f"Property {current_path}"
+        start_line = f"Property '{current_path}'"
         if val['operation'] == 'changed':
             result.append(f"{start_line} was update. "
                           f"From {to_str(val['old'])} to {to_str(val['new'])}")
