@@ -16,7 +16,7 @@ def walk(node, path=''):
         current_path = f"{path}{val['key']}"
         start_line = f"Property '{current_path}'"
         if val['operation'] == 'changed':
-            result.append(f"{start_line} was update. "
+            result.append(f"{start_line} was updated. "
                           f"From {to_str(val['old'])} to {to_str(val['new'])}")
         if val['operation'] == 'nested':
             result.append(f"{walk(val['value'], current_path + '.' )}")
