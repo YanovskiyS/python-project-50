@@ -3,12 +3,12 @@ import json
 import yaml
 
 
-def parse(data, format: str):
-    if format == 'json':
+def parse(data, data_format: str):
+    if data_format == 'json':
         return json.loads(data)
-    if format == 'yaml' or format == 'yml':
+    if data_format == 'yaml' or data_format == 'yml':
         return yaml.safe_load(data)
-    raise Exception(f"No such method for format: {format}")
+    raise Exception(f"This format is not supported: {data_format}")
 
 
 def get_data(path):

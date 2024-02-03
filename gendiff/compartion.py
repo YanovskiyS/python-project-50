@@ -1,4 +1,4 @@
-def compare_file(data1, data2):
+def build_diff(data1, data2):
     keys = sorted(data1.keys() | data2.keys())
     added = data2.keys() - data1.keys()
     deleted = data1.keys() - data2.keys()
@@ -16,7 +16,7 @@ def compare_file(data1, data2):
             description["value"] = data1[key]
         elif isinstance(data1[key], dict) and isinstance(data2[key], dict):
             description["operation"] = 'nested'
-            description["value"] = compare_file(data1[key], data2[key])
+            description["value"] = build_diff(data1[key], data2[key])
         else:
             description["operation"] = 'changed'
             description["old"] = data1[key]
